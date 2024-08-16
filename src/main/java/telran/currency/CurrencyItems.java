@@ -4,18 +4,19 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
+
 import telran.currency.service.CurrencyConvertor;
 import telran.view.InputOutput;
 import telran.view.Item;
 import telran.view.SystemInputOutput;
 
 public class CurrencyItems {
-    
-    private CurrencyConvertor currencyConvertor;
-    private static final long MIN_NUMBERS = 1;
+	private static final long MIN_NUMBERS = 1;
     private static final long MAX_NUMBERS = 30;
     private static final long MIN_AMOUNT = 1;
     private static final long MAX_AMOUNT = 1000000;
+    private CurrencyConvertor currencyConvertor;
+    
 
     public CurrencyItems(CurrencyConvertor currencyConvertor) {
         this.currencyConvertor = currencyConvertor;
@@ -53,7 +54,7 @@ public class CurrencyItems {
         int amount = (int) io.readNumberRange("Enter amount",
             "Wrong amount. Must be from 1 to 1 000 000", MIN_AMOUNT, MAX_AMOUNT).longValue();
         double result = currencyConvertor.convert(codeFrom, codeTo, amount);
-        io.writeString("Converted amount: " + result + "\n");
+        io.writeString("Converted amount: " + result + " " +codeTo.toString() +"\n" );
     }
 
     public void getAllCodes(InputOutput io) {
