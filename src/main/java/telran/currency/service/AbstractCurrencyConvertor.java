@@ -1,17 +1,11 @@
 package telran.currency.service;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
-import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.HashMap;
-import java.util.List;
 
 
 public class AbstractCurrencyConvertor implements CurrencyConvertor {

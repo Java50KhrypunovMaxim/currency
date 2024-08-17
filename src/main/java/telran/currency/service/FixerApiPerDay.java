@@ -2,7 +2,7 @@ package telran.currency.service;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.IOException;
+
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -11,7 +11,7 @@ import java.net.http.HttpResponse.BodyHandlers;
 import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
 
 import org.json.JSONObject;
 

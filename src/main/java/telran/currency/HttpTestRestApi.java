@@ -1,13 +1,8 @@
 package telran.currency;
 
 import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.http.*;
-import java.net.http.HttpResponse.BodyHandler;
 import java.net.http.HttpResponse.BodyHandlers;
-import java.net.http.HttpResponse.BodySubscriber;
-import java.net.http.HttpResponse.ResponseInfo;
-import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.stream.Collectors;

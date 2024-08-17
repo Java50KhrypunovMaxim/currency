@@ -1,14 +1,11 @@
 package telran.currency;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-
 
 import telran.currency.service.CurrencyConvertor;
 import telran.view.InputOutput;
 import telran.view.Item;
-import telran.view.SystemInputOutput;
 
 public class CurrencyItems {
 	private static final long MIN_NUMBERS = 1;
